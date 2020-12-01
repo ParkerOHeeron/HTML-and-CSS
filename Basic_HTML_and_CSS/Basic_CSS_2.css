@@ -1,0 +1,11 @@
+﻿body {
+      
+}
+p {
+            background-color: red;
+            color: blue;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: small;
+            text-align: center;
+        }

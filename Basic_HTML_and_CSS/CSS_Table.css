@@ -1,0 +1,14 @@
+﻿body {
+    
+}
+table {
+    border: 1px solid silver;
+}
+td {
+      text-align: center;  
+      background-color: turquoise;
+   
+   }
+td:hover {
+      color: silver;
+}
