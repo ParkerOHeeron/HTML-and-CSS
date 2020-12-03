@@ -1,0 +1,29 @@
+﻿body
+{
+    
+}
+#home {
+    background-color: grey;
+}
+img {
+    width: 500px;
+    height: 450px
+}
+
+.container {
+    width: 500px;
+    clear: both;
+}
+
+.container input {
+    width: 100%;
+    clear: both;
+}
+
+h1 {
+    font-style: italic; 
+}
+
+ul {
+    background-color: grey;
+}
