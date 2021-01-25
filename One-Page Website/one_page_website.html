@@ -6,6 +6,7 @@
     <title>The Restaurant</title>
     <link rel="stylesheet" href="./css/css_index.css" />
     <link rel="stylesheet" href="./css/one_page_website.css">
+    <script src="js/one_page_website.js"></script>
 </head>
 <body>
 
@@ -33,13 +34,13 @@
     <h1>  We here at the Restaurant send pictures of delicious looking food to anyone who wants it!</h1> 
     <br />
     <br />
-    <!--  GALLERY -->
+    <!--  GALLERY 
     <section>
         <div id="menu">
             <h1>Menu</h1>
             <div>
 
-                <!-- PHOTO-CONTAINER 1 -->
+                 PHOTO-CONTAINER 1
                 <div>
                     <div>
                         <img src="./images/thumb/thumb_1.jpg" alt="Cooking..." />
@@ -50,7 +51,7 @@
                     </div>
                 </div>
                 <!-- END PHOTO-CONTAINER 1 -->
-                <!-- PHOTO-CONTAINER 2 -->
+                <!-- PHOTO-CONTAINER 2 
                 <div>
                     <div>
                         <img src="./images/thumb/thumb_2.jpg" alt="Cooking..." />
@@ -61,7 +62,7 @@
                     </div>
                 </div>
                 <!-- END PHOTO-CONTAINER 2 -->
-                <!-- PHOTO-CONTAINER 3 -->
+                <!-- PHOTO-CONTAINER 3 
                 <div>
                     <div>
                         <img src="./images/thumb/thumb_3.jpg" alt="Cooking..." />
@@ -72,7 +73,7 @@
                     </div>
                 </div>
                 <!-- END PHOTO-CONTAINER 3 -->
-                <!-- PHOTO-CONTAINER 4 -->
+                <!-- PHOTO-CONTAINER 4 
                 <div>
                     <div>
                         <img src="./images/thumb/thumb_4.jpg" alt="Cooking..." />
@@ -83,7 +84,7 @@
                     </div>
                 </div>
                 <!-- END PHOTO-CONTAINER 4 -->
-                <!-- PHOTO-CONTAINER 5 -->
+                <!-- PHOTO-CONTAINER 5 
                 <div>
                     <div>
                         <img src="./images/thumb/thumb_5.jpg" alt="Cooking..." />
@@ -94,7 +95,7 @@
                     </div>
                 </div>
                 <!-- END PHOTO-CONTAINER 5 -->
-                <!-- PHOTO-CONTAINER 6 -->
+                <!-- PHOTO-CONTAINER 6
                 <div>
                     <div>
                         <img src="./images/thumb/thumb_6.jpg" alt="Cooking..." />
@@ -105,7 +106,7 @@
                     </div>
                 </div>
                 <!-- END PHOTO-CONTAINER 6 -->
-                <!-- PHOTO-CONTAINER 7 -->
+                <!-- PHOTO-CONTAINER 7 
                 <div>
                     <div>
                         <img src="./images/thumb/thumb_7.jpg" alt="Cooking..." />
@@ -116,7 +117,7 @@
                     </div>
                 </div>
                 <!-- END PHOTO-CONTAINER 7 -->
-                <!-- PHOTO-CONTAINER 8 -->
+                <!-- PHOTO-CONTAINER 8 
                 <div>
                     <div>
                         <img src="./images/thumb/thumb_8.jpg" alt="Cooking..." />
@@ -127,10 +128,10 @@
                     </div>
                 </div>
                 <!-- END PHOTO-CONTAINER 8 -->
-                <!-- VIDEO -->
+                <!-- VIDEO 
                 <h3>If you are not hungry after all this good looking food here is a video of bacon being cooked</h3>
                 <iframe width="1000" height="480" src="https://www.youtube.com/embed/4_2Dgn-CgYw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <!-- End Video-->
+                <!-- End Video
 
 
 
@@ -138,7 +139,129 @@
             </div>
         </div>
     </section>
-    <!-- END GALLERY -->
+    -- END GALLERY -->
+
+    <!-- Images used to open the lightbox -->
+<div class="row">
+    <div class="column">
+      <img src="./images/thumb/thumb_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="./images/thumb/thumb_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="./images/thumb/thumb_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="./images/thumb/thumb_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="./images/thumb/thumb_5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="./images/thumb/thumb_6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="./images/thumb/thumb_7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="./images/thumb/thumb_8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+    </div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 8</div>
+        <img src="./images/thumb/thumb_1.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 8</div>
+        <img src="./images/thumb/thumb_2.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 8</div>
+        <img src="./images/thumb/thumb_3.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 8</div>
+        <img src="./images/thumb/thumb_4.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 8</div>
+        <img src="./images/thumb/thumb_5.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">6 / 8</div>
+        <img src="./images/thumb/thumb_6.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">7 / 8</div>
+        <img src="./images/thumb/thumb_7.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">8 / 8</div>
+        <img src="./images/thumb/thumb_8.jpg" style="width:100%">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="./images/thumb/thumb_1.jpg" onclick="currentSlide(1)" alt="Stretched Pizza">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="./images/thumb/thumb_2.jpg" onclick="currentSlide(2)" alt="Wine and Salad">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="./images/thumb/thumb_3.jpg" onclick="currentSlide(3)" alt="Shellfish">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="./images/thumb/thumb_4.jpg" onclick="currentSlide(4)" alt="Pizza by the slice">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="./images/thumb/thumb_5.jpg" onclick="currentSlide(5)" alt="Dessert">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="./images/thumb/thumb_6.jpg" onclick="currentSlide(6)" alt="Wine">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="./images/thumb/thumb_7.jpg" onclick="currentSlide(7)" alt="More dessert">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="./images/thumb/thumb_8.jpg" onclick="currentSlide(8)" alt="Ceasar Salad">
+      </div>
+
+
+    </div>
+  </div>
+
+
+
     <!-- RSVP -->
     <section>
         <div id="contact">
