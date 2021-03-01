@@ -124,20 +124,26 @@ section {
     overflow: hidden;
     top: 0;
     left: 0;
-    text-align: center;
+    text-align: left;
 }
 
 .menu-container {
     max-height: 340px;
     margin: 0% auto;
     content: " ";
-    /* top: 0;
-    left: 0; */
+   /* top: 0;
+    left: 0; 
     /* position: absolute; */ /* to the top edge of the screen */
     width: 100%;
     position: fixed;
     z-index: 100;
-    /*background-color: rgba(255,255,255,0.5);*/
+    /*list-style-type: none;*/
+    background-color: rgba(255,255,255,0.5);
+}
+
+.menu-container ul {
+    list-style-type: none;
+    display: inline;
 }
 
 /*=====================================
@@ -264,7 +270,7 @@ Contact STYLES
     font-weight: 600;
     color: #8D8E8F;
     padding: 2% 1% 2% 7%;
-    width: 80;
+    width: 85%;
     border-top: 1px solid #090B0D;
     border-right: 2px solid #424549;
     border-left: 1px solid #090B0D;
